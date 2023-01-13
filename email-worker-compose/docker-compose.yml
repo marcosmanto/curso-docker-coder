@@ -1,0 +1,15 @@
+version: '3'
+volumes:
+  dados:
+services:
+  db:
+    image: postgres:9.6
+    volumes:
+      # data volume
+      - dados:/var/lib/postgresql/data
+      # scripts
+      - .\scripts:/scripts
+      - .\scripts\init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 1234
