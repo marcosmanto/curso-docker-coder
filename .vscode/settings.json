@@ -1,0 +1,23 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "ex-volume": true,
+    "node-mongo-compose": true,
+    "segundo-build": true,
+    "build-dev": true,
+    "primeiro-build": true,
+    "build-with-copy": true,
+    ".vscode": true,
+    "**/.gitignore": true
+  },
+  "explorerExclude.backup": {}
+}
