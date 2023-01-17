@@ -49,6 +49,9 @@ services:
     depends_on:
       - db
       - queue
+    environment:
+      POSTGRES_PASSWORD: 1234
+      DB_NAME: email_sender
   queue:
     image: redis:3.2
     networks:
